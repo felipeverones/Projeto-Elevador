@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dD:\altera\13.1
+Eseparador
+Z0 w1658692435
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_SEPARADOR
+Z6 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Separador.vhd
+Z7 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Separador.vhd
+l0
+L6
+VOVYH`QzK]d;gLTC[XP86H3
+!s100 kWn@`8n?279gH0al]gfY92
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1658969605.707000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Separador.vhd|
+Z11 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Separador.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavorial
+R1
+R2
+R3
+R4
+DEx4 work 9 separador 0 22 OVYH`QzK]d;gLTC[XP86H3
+l21
+L19
+V32oQH8HIOhbZ5?_=zX_DJ1
+!s100 3b@>8kkFjOHIKk<:63QiK0
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Etb_separador
+Z14 w1658794403
+R1
+R2
+R3
+R4
+R5
+Z15 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Tb_SEPARADOR.vhd
+Z16 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Tb_SEPARADOR.vhd
+l0
+L6
+V880A:NXg>hW[9H=Jz[LRB1
+R8
+32
+Z17 !s108 1658969605.323000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Tb_SEPARADOR.vhd|
+Z19 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SEPARADOR/Tb_SEPARADOR.vhd|
+R12
+R13
+!s100 7k]9N^1U[be9c>X6RGM]L0
+!i10b 1
+Abehavorial
+R1
+R2
+R3
+R4
+DEx4 work 12 tb_separador 0 22 880A:NXg>hW[9H=Jz[LRB1
+l41
+L11
+V>Rknn1KP85BVjoYb5OWjf3
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 :_EDTD>go0EiB?O[JU7j30
+!i10b 1

@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_SELETOR_ANDAR
+Eseleciona_destino
+Z0 w1658692568
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_SELECIONA_DESTINO
+Z6 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd
+Z7 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd
+l0
+L6
+VeChQ:IPmXzcPnDG8Jdfm23
+!s100 B9liS=>CY;;;3mNXOz`0Z0
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1658966110.204000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd|
+Z11 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavorial
+R1
+R2
+R3
+R4
+DEx4 work 17 seleciona_destino 0 22 eChQ:IPmXzcPnDG8Jdfm23
+l26
+L25
+VbLP[1IkDT322mTa6ngRh?3
+!s100 5>4fQGoNTdae@TkBiL92:2
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Etb_seleciona_destino
+Z14 w1658794797
+R1
+R2
+R3
+R4
+R5
+Z15 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd
+Z16 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd
+l0
+L6
+V=_8?:lFYeoV`:kVCVj]YA0
+R8
+32
+Z17 !s108 1658966109.818000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd|
+Z19 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd|
+R12
+R13
+!s100 oD@Vf;Y:Cin=d>aW4KThI1
+!i10b 1
+Abehavorial
+R1
+R2
+R3
+R4
+DEx4 work 20 tb_seleciona_destino 0 22 =_8?:lFYeoV`:kVCVj]YA0
+l46
+L10
+VjiTUQDniIlnT[16@>A37e2
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 ^PZecMWILPC`ANC3ljCTm0
+!i10b 1

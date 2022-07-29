@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_ELEVADOR
+Econtrolador
+Z0 w1658692923
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR
+Z6 8D:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR\Controlador.vhd
+Z7 FD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR\Controlador.vhd
+l0
+L6
+Vd>mEM=]DnI5=l<AF2U65a1
+!s100 XgIN5^4cBFzG52DCUS]?62
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1658970552.912000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR\Controlador.vhd|
+Z11 !s107 D:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR\Controlador.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 11 controlador 0 22 d>mEM=]DnI5=l<AF2U65a1
+l92
+L27
+VIH49Sf=@0^8d@`kXjza[X1
+!s100 K=T3FF`5iZ92X<0`KC2P40
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Etb_controlador
+Z14 w1658793807
+R1
+R2
+R3
+R4
+R5
+Z15 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_CONTROLADOR/TB_CONTROLADOR.vhd
+Z16 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_CONTROLADOR/TB_CONTROLADOR.vhd
+l0
+L6
+V;n_BfWzi?Y^4:L^;Z0kOP3
+R8
+32
+Z17 !s108 1658970552.312000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_CONTROLADOR/TB_CONTROLADOR.vhd|
+Z19 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_CONTROLADOR/TB_CONTROLADOR.vhd|
+R12
+R13
+!s100 0U;kmUmUhlN24n@<]T?JS0
+!i10b 1
+Abehavorial
+R1
+R2
+R3
+R4
+DEx4 work 14 tb_controlador 0 22 ;n_BfWzi?Y^4:L^;Z0kOP3
+l48
+L11
+V>G9e6nN4zUJE7lUFPLHN93
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 cM3_?FfKfSb4^GBQn3C6L3
+!i10b 1

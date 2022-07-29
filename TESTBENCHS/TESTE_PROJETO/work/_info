@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_CONTROLADOR
+Eprojeto
+Z0 w1658692737
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dD:\felip\Documents\Estudos\Trabalho_01_VHDL\Trabalho_Final\ElevadorFinal\TESTE_PROJETO
+Z7 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/Projeto.vhd
+Z8 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/Projeto.vhd
+l0
+L7
+V^RR>UeN8>A`BNbPMU5_602
+!s100 hHQ4iH9]Jckl6n1VL_5?>3
+Z9 OV;C;10.1d;51
+32
+!i10b 1
+Z10 !s108 1658971143.221000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/Projeto.vhd|
+Z12 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/Projeto.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+Z15 DEx4 work 7 projeto 0 22 ^RR>UeN8>A`BNbPMU5_602
+l81
+L34
+Z16 V7[iR[4<V>5^EJBX`mnaL50
+Z17 !s100 fFCe`H@aMLeZf]i_cKYlW1
+R9
+32
+!i10b 1
+R10
+R11
+R12
+R13
+R14
+Etb_projeto
+Z18 w1658693837
+R2
+R1
+R4
+R5
+R6
+Z19 8D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/TB_Projeto.vhd
+Z20 FD:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/TB_Projeto.vhd
+l0
+L6
+V=TPQQP;ZeANnGh2AOfE<n0
+R9
+32
+Z21 !s108 1658971142.877000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/TB_Projeto.vhd|
+Z23 !s107 D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_PROJETO/TB_Projeto.vhd|
+R13
+R14
+!s100 lo4MPmM]:Cf^_o^U5Lb`H1
+!i10b 1
+Abehavorial
+R2
+R1
+R4
+R5
+DEx4 work 10 tb_projeto 0 22 =TPQQP;ZeANnGh2AOfE<n0
+l58
+L11
+VYo6<^6e=7?Xh@`neF:YAo0
+!s100 YEmKQeEN=>M9lSTSIfO]_0
+R9
+32
+R21
+R22
+R23
+R13
+R14
+!i10b 1

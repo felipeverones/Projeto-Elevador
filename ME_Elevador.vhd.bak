@@ -1,0 +1,143 @@
+	LIBRARY IEEE;
+	USE IEEE.STD_LOGIC_1164.ALL;
+	USE IEEE.STD_LOGIC_ARITH.ALL;
+	USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+	ENTITY ME_ELEVADOR IS	
+	PORT(
+		i_ANDAR		   	: IN STD_LOGIC_VECTOR(1 downto 0);
+		i_CLK 		   	: IN STD_LOGIC;
+		i_RST 		   	: IN STD_LOGIC;
+		i_SOBE 		   	: IN STD_LOGIC;
+		i_DESCE 		   	: IN STD_LOGIC;
+		i_TIMER           : IN STD_LOGIC;
+		o_RST_TIMER       : OUT STD_LOGIC;
+		o_EN_TIMER 	      : OUT STD_LOGIC;
+		o_PORTAS		      : OUT STD_LOGIC;
+		o_MOVIMENTO	      : OUT STD_LOGIC;
+		o_ANDAR		      : OUT STD_LOGIC_VECTOR(1 downto 0);
+		o_WR_ME 		      : OUT STD_LOGIC
+
+	);
+END ME_ELEVADOR;
+
+ARCHITECTURE BEHAVIORAL OF ME_ELEVADOR IS
+
+TYPE w_STATE_TYPE IS (st_IDLE, st_PARADO, st_AGUARDA, st_SOBE, st_DESCE);
+SIGNAL w_STATE : w_STATE_TYPE;
+SIGNAL w_MUTEX : STD_LOGIC;
+SIGNAL w_COUNT : STD_LOGIC_VECTOR(1 DOWNTO 0);
+
+BEGIN
+
+PROCESS(i_CLK, i_RST)
+	BEGIN
+		if(i_RST = '0') then
+			w_MUTEX <= '0';
+			w_COUNT <= "00";
+			o_ANDAR <= "00";
+			o_EN_TIMER <= '0';
+			o_RST_TIMER <= '0';
+			o_WR_ME <= '0';
+			o_MOVIMENTO <= '0';
+			o_PORTAS <= '0';
+			w_STATE <= st_IDLE;
+		
+	elsif RISING_EDGE (i_CLK) then
+		CASE w_STATE IS
+			when st_IDLE =>
+				o_RST_TIMER 	<= '1';
+				o_EN_TIMER 		<= '0';
+				o_WR_ME 			<= '0';
+				o_MOVIMENTO 	<= '0';
+				o_PORTAS			<= '0';
+				o_ANDAR  		<= "00";
+				w_STATE 			<= st_PARADO;
+------------------------------ ELEVADOR PARADO ----------------------------------------				
+			when st_PARADO =>
+					o_PORTAS <= '1';
+					o_EN_TIMER <= '1';
+					o_RST_TIMER <= '0';
+					o_WR_ME <= '0';
+				------------ QUANDO ELE RECEBER UM DESTINO VAI PRA 'AGUARDA' --------------
+			if(i_TIMER = '1') then
+				o_EN_TIMER <= '0';
+				o_RST_TIMER <= '1';
+				o_MOVIMENTO <= '0';
+				O_PORTAS <= '0';
+				w_MUTEX <= '1';
+				w_STATE <= st_AGUARDA;
+			ELSE
+				w_STATE <= st_PARADO;
+			END IF;
+				----------------------- ELEVADOR AGUARDANDO RST DO TIMER -------------------------------			
+			when st_AGUARDA =>
+					o_EN_TIMER <= '0';
+					o_RST_TIMER <= '1';
+					o_WR_ME <= '0';
+					o_PORTAS <= '0';
+					w_COUNT <= w_COUNT + 1;
+				if(w_COUNT = "11") THEN
+					w_COUNT <= "00";
+				if(i_SOBE = '0' AND i_DESCE = '0') then
+					IF(w_MUTEX = '0') THEN
+						o_EN_TIMER <= '1';
+						o_RST_TIMER <= '1';
+						o_wR_ME <= '0';
+						w_STATE <= st_PARADO;
+					ELSE
+						w_STATE <= st_AGUARDA;
+					END IF;
+				elsif(i_SOBE = '1' AND i_DESCE = '0') then
+					o_EN_TIMER 	<= '1';
+					o_RST_TIMER <= '0';
+					o_PORTAS 	<= '0';
+					o_MOVIMENTO <= '1';
+					w_STATE 		<= st_SOBE;
+				
+				elsif(i_DESCE = '1' AND i_SOBE = '0') then
+					o_EN_TIMER 	<= '1';
+					o_RST_TIMER <= '0';
+					o_PORTAS 	<= '0';	
+					o_MOVIMENTO <= '1';
+					w_STATE <= st_DESCE;
+					
+				else
+					w_STATE <= st_AGUARDA;
+				end if;
+				ELSE
+					w_STATE <= st_AGUARDA;
+				END IF;
+----------------------------- ELEVADOR SUBINDO -----------------------------------
+				when st_SOBE =>
+						if(i_TIMER = '1') then
+							o_ANDAR 		<=	i_ANDAR + 1;
+							o_WR_ME <= '1';
+							o_RST_TIMER <= '1';
+						o_EN_TIMER 	<= '1';
+						w_MUTEX <= '0';
+						o_MOVIMENTO <= '0';
+						w_STATE <= st_AGUARDA;
+					else
+						w_STATE <= st_SOBE;
+					end if;
+---------------------------- ELEVADOR DESCENDO -----------------------------------
+					when st_DESCE =>
+					if(i_TIMER = '1')then
+						o_ANDAR 		<=	i_ANDAR - 1;
+						o_WR_ME <= '1';
+						o_RST_TIMER <= '1';
+						o_MOVIMENTO <= '0';
+						o_EN_TIMER 	<= '1';
+						w_MUTEX <= '0';
+						w_STATE <= st_AGUARDA;
+					else
+						w_STATE <= st_DESCE;
+					end if;
+				when others =>
+						w_STATE <= st_IDLE;
+			END CASE;
+		END IF;
+END PROCESS;
+end;
+		

@@ -1,0 +1,74 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY TB_SELETOR_ANDAR IS
+END TB_SELETOR_ANDAR;
+
+
+
+ARCHITECTURE BEHAVORIAL OF TB_SELETOR_ANDAR IS
+	COMPONENT SELETOR_ANDAR IS
+		PORT(
+			i_CLK					: IN STD_LOGIC;
+			i_RST					: IN STD_LOGIC;
+			i_ANDAR				: IN STD_LOGIC_VECTOR(5 downto 0);
+			o_ANDAR_ORIGEM		: OUT STD_LOGIC_VECTOR(1 downto 0);
+			o_SENTIDO_ORIGEM  : OUT STD_LOGIC
+		);
+	END COMPONENT;
+	
+	SIGNAL w_CLK, w_RST, w_SENTIDO_ORIGEM 		: STD_LOGIC;
+	SIGNAL w_ANDAR									 	: STD_LOGIC_VECTOR(5 downto 0);
+	SIGNAL w_ANDAR_ORIGEM 							: STD_LOGIC_VECTOR(1 downto 0);
+	
+	
+	PROCEDURE CLK_GEN(signal w_CLK : OUT STD_LOGIC; constant FREQ: INTEGER) IS
+		CONSTANT PERIOD : time := 1 sec / FREQ;
+		BEGIN
+			LOOP
+				w_CLK <= '1';
+				wait for PERIOD/2;
+				w_CLK <= '0';
+				wait for PERIOD/2;
+			END LOOP;
+	END PROCEDURE;
+	
+	BEGIN
+	UU0 : SELETOR_ANDAR
+		PORT MAP(
+			i_CLK					=> w_CLK,
+			i_RST					=> w_RST,
+			i_ANDAR				=> w_ANDAR,
+			o_ANDAR_ORIGEM		=> w_ANDAR_ORIGEM,
+			o_SENTIDO_ORIGEM  => w_SENTIDO_ORIGEM
+		);
+	CLK_GEN(w_CLK, 50000000);
+	PROCESS
+		BEGIN
+		wait for 10 ns;
+		
+		w_RST <= '1';
+		wait for 7 ns;
+		w_RST <= '0';
+		w_ANDAR <= "000000";
+		wait for 20 ns;
+		w_ANDAR <= "000001";
+		wait for 20 ns;
+		w_ANDAR <= "000010";
+		wait for 20 ns;
+		w_ANDAR <= "000100";
+		wait for 20 ns;
+		w_ANDAR <= "001000";
+		wait for 20 ns;
+		w_ANDAR <= "010000";
+		wait for 20 ns;
+		w_ANDAR <= "100000";
+		wait for 20 ns;
+	END PROCESS;
+END BEHAVORIAL;
+
+
+	
+	

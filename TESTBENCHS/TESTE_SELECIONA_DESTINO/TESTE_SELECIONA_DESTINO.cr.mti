@@ -1,0 +1,21 @@
+D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd {1 {vcom -work work -2002 -explicit D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/TB_SELECIONA_DESTINO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TB_SELECIONA_DESTINO
+-- Compiling architecture BEHAVORIAL of TB_SELECIONA_DESTINO
+
+} {} {}} D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd {1 {vcom -work work -2002 -explicit D:/felip/Documents/Estudos/Trabalho_01_VHDL/Trabalho_Final/ElevadorFinal/TESTE_SELECIONA_DESTINO/Seleciona_destino.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity SELECIONA_DESTINO
+-- Compiling architecture BEHAVORIAL of SELECIONA_DESTINO
+
+} {} {}}

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Jul 29 08:31:33 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : ElevadorFinal
+Top-level Entity Name : TOP_PROJETO
+Family : MAX 10
+Total logic elements : 360
+    Total combinational functions : 355
+    Dedicated logic registers : 161
+Total registers : 161
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
